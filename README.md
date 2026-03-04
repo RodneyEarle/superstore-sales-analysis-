@@ -1,4 +1,5 @@
-# Superstore Sales Analysis (SQL)
+# Retail Sales Performance Analysis
+### SQL + Power BI Dashboard Project
 
 ## Overview
 Analyzed 9,994 retail transactions (2014–2017) using PostgreSQL to identify profit drivers, regional performance, product-level profitability, and discount impact.
@@ -23,10 +24,24 @@ Analyzed 9,994 retail transactions (2014–2017) using PostgreSQL to identify pr
 - **Furniture** has very low margin (~2.49%) despite high sales
 - Worst-loss products include **Cubify 3D printers** and **conference tables**, contributing to margin erosion
 
-## Files
-- `sql/analysis_queries.sql` — all SQL queries used in the analysis
-- `dataset/` — source dataset (CSV)
-- `dashboard/` — exported dashboard image 
+## Business Insights
+
+- The **West region** is the strongest market, contributing the highest sales and maintaining strong margins.
+- The **Central region** shows weaker profitability, suggesting potential operational inefficiencies or excessive discounting.
+- **Technology products** drive the majority of profits and represent the highest-margin category.
+- **Furniture generates significant revenue but very low margins**, indicating pricing or cost structure issues.
+- Certain products (e.g., **Cubify 3D printers**) consistently generate losses and may require pricing review or discontinuation
+
+## Repository Structure
+
+dataset/
+- Raw Superstore dataset (CSV)
+sql/
+- SQL queries used for analysis
+dashboard/
+- Exported Power BI dashboard screenshots
+README.md
+- Project overview and insights
 
 ## How to Reproduce
 1. Create a PostgreSQL database (e.g., `ecommerce_analysis`)

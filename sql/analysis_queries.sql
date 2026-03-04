@@ -15,6 +15,7 @@ ROUND(SUM(profit),2) AS profit,
 ROUND(100.0 * SUM(profit) / SUM(sales),2) AS margin
 FROM superstore_orders
 GROUP BY region;
+ORDER BY sales DESC;
 
 3. Category Performance
 
@@ -25,6 +26,7 @@ ROUND(SUM(profit),2) AS profit,
 ROUND(100.0 * SUM(profit) / SUM(sales),2) AS margin
 FROM superstore_orders
 GROUP BY category;
+ORDER BY sales DESC;
 
 4. Top 5 and Bottom 5 Products by Profit
 
